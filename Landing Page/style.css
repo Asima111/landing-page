@@ -1,99 +1,151 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family:sans-serif;
-    color: #333;
-}
-.a1 {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-.head {
-    background: #007BFF;
-    color: #fff;
-    padding: 20px 0;
-}
-.head .h1 {
-    font-size: 27.5px;
-    font-weight: bold;
-}
-.head .nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
-}
-.head .nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.d1 {
-    text-align: center;
-    background: #f4f4f4;
-    padding: 48px 16px;
-}
-.d1 h2 {
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-.d1 p {
-    margin-bottom: 32px;
-}
-.d1 .btn {
-    background: #007BFF;
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-
-.c1 {
-    padding: 32px 32px;
-    background: #fff;
-    text-align: center;
-}
-.c1 h2{
-    margin-bottom: 16px;
-}
-
-
-
-
-.footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 16px 0;
-    margin-top: 32px;
-}
-
-
-@media (max-width: 800px) {
-    .head .nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
     }
-    .d1 h2 {
-        font-size: 1.5rem;
+
+    body {
+        background-image: linear-gradient(rgb(75, 40, 40), rgb(233, 58, 87), rgb(248, 43, 43));
+        color: white;
+        padding: 20px;
     }
-   
-}
-@media (max-width: 400px) {
-    .head .nav ul {
-        flex-direction: column;
-        align-items: flex-end;
+
+
+    nav {
+        width: 100%;
+        display: flex;
+        background: transparent;
+        padding: 30px 0;
     }
-    .d1 h2 {
-        font-size: 24px;
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
     }
-   
-}
+
+    nav ul li h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    #a1 {
+        padding-left: 400px;
+    }
+
+    nav ul li a:hover {
+        color: #ddd;
+    }
+
+    #btn {
+        margin-left: 10px;
+        padding: 8px 16px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+
+    #odd {
+        margin-top: 57px;
+        font-family: sans-serif;
+        font-size: 70px;
+        line-height: 1.1;
+        color: black;
+    }
+
+    #fail {
+        font-size: 20px;
+        margin-top: 30px;
+        color: black;
+    }
+
+    #right {
+        margin-top: 40px;
+        border-radius: 50px;
+        background-color: black;
+        border: 1px solid black;
+        width: 170px;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+       margin-bottom: 24px;
+    }
+
+    #right:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .footer-links {
+        padding: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .footer-links div {
+        padding: 5px 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    @media (max-width: 800px) {
+        #odd {
+            font-size: 40px;
+        }
+
+        #fail {
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+
+        #right {
+            width: 140px;
+            height: 45px;
+        }
+
+          #a1 {
+        padding-left: 0px;
+    }
+    }
+
+    @media (max-width: 400px) {
+        #odd {
+            font-size: 32px;
+        }
+
+        #fail {
+            font-size: 14px;
+        }
+
+        #btn {
+            font-size: 14px;
+            padding: 6px 12px;
+        }
+
+        #right {
+            font-size: 14px;
+        }
+    }
